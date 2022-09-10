@@ -7,3 +7,8 @@ INSERT INTO posts (title, content) VALUES
 INSERT INTO comments (content, author_name, post_id) VALUES 
   ('hello', 'yichao', 1),
   ('bye', 'oahciy', 2);
+
+-- SELECT posts.title, posts.content, comments.content AS comment_content, comments.author_name
+--   FROM posts
+--     JOIN comments ON comments.post_id = posts.id
+--   WHERE posts.id = $1;
